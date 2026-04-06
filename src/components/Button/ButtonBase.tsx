@@ -1,7 +1,17 @@
 // src/components/Button/ButtonBase.tsx
 
-function ButtonBase() {
-  return null
+import type { ButtonBaseProps } from "./types"
+
+function ButtonBase({
+  children,
+  disabled = false,
+  onClick,
+  }: ButtonBaseProps) {
+  return (
+    <button disabled={disabled} onClick={onClick}>
+      {children}
+    </button>
+  )
 }
 
 export default ButtonBase

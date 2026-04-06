@@ -1,7 +1,13 @@
 // src/components/Button/Button.tsx
 
-function Button() {
-  return null
+import TextButtonBase from "./TextButtonBase"
+import type { ButtonProps } from "./types"
+
+function Button({
+  variant = 'primary',
+  ...props
+}: ButtonProps) {
+  return <TextButtonBase {...props} />
 }
 
 export default Button
