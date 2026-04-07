@@ -1,0 +1,12 @@
+// src/layout/MainLayout.scss
+
+.main-layout {
+  min-height: 100vh;
+  padding: 48px 24px;
+  background: #f8f9fb;
+}
+
+.main-layout__container {
+  max-width: 960px;
+  margin: 0 auto;
+}

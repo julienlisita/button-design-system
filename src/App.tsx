@@ -1,11 +1,12 @@
 // src/App.tsx
 
-import './App.css'
+import ButtonExamples from './examples/ButtonExamples'
+import MainLayout from './layout/MainLayout'
 function App() {
   return (
-    <main>
-      <h1>Button design system</h1>
-    </main>
+    <MainLayout>
+      <ButtonExamples />
+    </MainLayout>
   )
 }
 

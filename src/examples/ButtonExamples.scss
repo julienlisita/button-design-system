@@ -1,0 +1,32 @@
+// src/examples/ButtonExamples.scss
+
+.button-examples {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-examples__header {
+  margin-bottom: 40px;
+}
+
+.button-examples__title {
+  font-size: 32px;
+}
+
+.button-examples__block {
+  width: 100%;
+  max-width: 600px;
+  min-height: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-examples__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
