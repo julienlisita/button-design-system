@@ -1,7 +1,116 @@
+// src/components/Button/tokens.scss
+
+// Spacing scale
+$space-none: 0;
+$space-xxxs: 2px;
+$space-xxs: 4px;
 $space-xs: 8px;
 $space-s: 12px;
+$space-m: 16px;
+$space-l: 24px;
+$space-xl: 32px;
+$space-2xl: 40px;
+$space-3xl: 56px;
+$space-4xl: 64px;
+$space-5xl: 80px;
+$space-6xl: 96px;
+$space-7xl: 128px;
+$space-8xl: 152px;
+
+// Radius scale
+$radius-none: 0;
+$radius-xxs: 2px;
+$radius-xs: 4px;
 $radius-s: 6px;
+$radius-m: 8px;
+$radius-l: 12px;
+$radius-xl: 16px;
 $radius-rounded: 99999px;
 
-$font-body-m: 14px;
-$font-body-s: 13px;
+// Typography
+$font-size-body-m: 14px;
+$line-height-body-m: 20px;
+
+$font-size-body-s: 13px;
+$line-height-body-s: 18px;
+
+// Shared motion / states
+$transition-fast: 0.2s ease;
+$color-focus-ring: #000;
+
+// Size tokens for text buttons
+$button-padding-y-m: $space-xs;
+$button-padding-x-m: $space-s;
+$button-gap-m: $space-xs;
+
+$button-padding-y-s: $space-xs;
+$button-padding-x-s: $space-s;
+$button-gap-s: $space-xs;
+
+$button-padding-y-xs: $space-xs;
+$button-padding-x-xs: $space-xs;
+$button-gap-xs: $space-xxs;
+
+// Typography mapping by size
+$button-font-size-m: $font-size-body-m;
+$button-line-height-m: $line-height-body-m;
+
+$button-font-size-s: $font-size-body-m;
+$button-line-height-s: $line-height-body-m;
+
+$button-font-size-xs: $font-size-body-s;
+$button-line-height-xs: $line-height-body-s;
+
+$font-family-body: 'Inter', sans-serif;
+$font-weight-body: 500;
+
+// Icon button specific
+$icon-button-padding: 10px;
+
+// Colors - brand
+$color-brand-primary: #007031;
+$color-brand-primary-hover: #005A27;
+$color-brand-primary-focus: #007031;
+
+$color-brand-secondary: #FFFFFF;
+$color-brand-secondary-hover: #F5F5F5;
+$color-brand-secondary-focus: #FFFFFF;
+
+$color-brand-ghost: #FFFFFF;
+$color-brand-ghost-hover: #F5F5F5;
+$color-brand-ghost-focus: rgba(0, 0, 0, 0.05);
+
+$color-brand-destructive: #D92D20;
+$color-brand-destructive-hover: #B42318;
+$color-brand-destructive-focus: #D92D20;
+
+$color-brand-alpha-dark:  rgba(0, 0, 0, 0.2);
+$color-brand-alpha-dark-hover: rgba(0, 0, 0, 0.3);
+$color-brand-alpha-dark-focus: rgba(0, 0, 0, 0.2);
+
+$color-brand-alpha-light: rgba(255, 255, 255, 0.2);
+$color-brand-alpha-light-hover: rgba(255, 255, 255, 0.3);
+$color-brand-alpha-light-focus: rgba(255, 255, 255, 0.2);
+
+$focus-ring-size: 3px;
+$focus-ring-color: rgba(0, 0, 0, 0.12);
+
+// Text colors
+$color-text-primary: #ffffff;
+$color-text-secondary: #111827;
+$color-text-ghost: #111827;
+$color-text-destructive: #dc2626;
+
+// Borders
+$color-border-primary: rgba(0, 0, 0, 0.3);
+$color-border-secondary:#D4D4D4;
+$color-border-ghost: transparent;
+$color-border-destructive: rgba(0, 0, 0, 0.3);
+
+// States
+$color-disabled-bg: #e5e7eb;
+$color-disabled-text: #9ca3af;
+
+$opacity-disabled: 0.4;
+
+$shadow-bottom-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
