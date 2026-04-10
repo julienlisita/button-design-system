@@ -84,13 +84,13 @@ $color-brand-destructive: #D92D20;
 $color-brand-destructive-hover: #B42318;
 $color-brand-destructive-focus: #D92D20;
 
-$color-brand-alpha-dark:  rgba(0, 0, 0, 0.2);
-$color-brand-alpha-dark-hover: rgba(0, 0, 0, 0.3);
-$color-brand-alpha-dark-focus: rgba(0, 0, 0, 0.2);
+$color-brand-alpha-dark:  #c2c2c2;
+$color-brand-alpha-dark-hover: #aaaaaa;
+$color-brand-alpha-dark-focus: #c2c2c2;
 
-$color-brand-alpha-light: rgba(255, 255, 255, 0.2);
-$color-brand-alpha-light-hover: rgba(255, 255, 255, 0.3);
-$color-brand-alpha-light-focus: rgba(255, 255, 255, 0.2);
+$color-brand-alpha-light: #f5f5f5;
+$color-brand-alpha-light-hover: #f6f6f6;
+$color-brand-alpha-light-focus: #ffffff;
 
 $focus-ring-size: 3px;
 $focus-ring-color: rgba(0, 0, 0, 0.12);
@@ -100,6 +100,15 @@ $color-text-primary: #ffffff;
 $color-text-secondary: #111827;
 $color-text-ghost: #111827;
 $color-text-destructive: #dc2626;
+
+// Icon colors
+$color-icon-primary: #ffffff;
+$color-icon-secondary: #737373;
+$color-icon-ghost: #737373;
+$color-icon-destructive: #ffffff;
+
+$color-icon-alpha-light: #ffffff;
+$color-icon-alpha-dark: #ffffff;
 
 // Borders
 $color-border-primary: rgba(0, 0, 0, 0.3);
