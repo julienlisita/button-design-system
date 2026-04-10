@@ -1,5 +1,7 @@
 // src/components/Button/tokens.scss
 
+// FOUNDATIONS
+
 // Spacing scale
 $space-none: 0;
 $space-xxxs: 2px;
@@ -34,24 +36,37 @@ $line-height-body-m: 20px;
 $font-size-body-s: 13px;
 $line-height-body-s: 18px;
 
-// Shared motion / states
-$transition-fast: 0.2s ease;
-$color-focus-ring: #000;
+$font-family-body: 'Inter', sans-serif;
+$font-weight-body: 500;
 
-// Size tokens for text buttons
+// Motion 
+$transition-fast: 0.2s ease;
+
+// Shadow
+$shadow-bottom-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+// Focus
+$focus-ring-size: 3px;
+$focus-ring-color: rgba(0, 0, 0, 0.12);
+
+// BUTTON STRUCTURE
+
+// Padding button
 $button-padding-y-m: $space-xs;
 $button-padding-x-m: $space-s;
-$button-gap-m: $space-xs;
 
 $button-padding-y-s: $space-xs;
 $button-padding-x-s: $space-s;
-$button-gap-s: $space-xs;
 
 $button-padding-y-xs: $space-xs;
 $button-padding-x-xs: $space-xs;
+
+//gap button
+$button-gap-m: $space-xs;
+$button-gap-s: $space-xs;
 $button-gap-xs: $space-xxs;
 
-// Typography mapping by size
+// font button
 $button-font-size-m: $font-size-body-m;
 $button-line-height-m: $line-height-body-m;
 
@@ -61,44 +76,53 @@ $button-line-height-s: $line-height-body-m;
 $button-font-size-xs: $font-size-body-s;
 $button-line-height-xs: $line-height-body-s;
 
-$font-family-body: 'Inter', sans-serif;
-$font-weight-body: 500;
-
-// Icon button specific
+// Icon button 
 $icon-button-padding: 10px;
 
-// Colors - brand
-$color-brand-primary: #007031;
-$color-brand-primary-hover: #005A27;
-$color-brand-primary-focus: #007031;
+// badge
+$badge-min-size-m: 20px;
+$badge-min-size-s: 20px;
+$badge-min-size-xs: 16px;
 
-$color-brand-secondary: #FFFFFF;
-$color-brand-secondary-hover: #F5F5F5;
-$color-brand-secondary-focus: #FFFFFF;
+$badge-radius: $radius-xs;
+$badge-padding-y: $space-xs;
+$badge-padding-x: 5px;
 
-$color-brand-ghost: #FFFFFF;
-$color-brand-ghost-hover: #F5F5F5;
-$color-brand-ghost-focus: rgba(0, 0, 0, 0.05);
+$font-size-badge: 12px;
+$line-height-badge: 16px;
+$font-weight-badge: 600;
 
-$color-brand-destructive: #D92D20;
-$color-brand-destructive-hover: #B42318;
-$color-brand-destructive-focus: #D92D20;
+// SURFACE
 
-$color-brand-alpha-dark:  #c2c2c2;
-$color-brand-alpha-dark-hover: #aaaaaa;
-$color-brand-alpha-dark-focus: #c2c2c2;
+// Button colors
+$color-surface-primary: #007031;
+$color-surface-primary-hover: #005A27;
+$color-surface-primary-focus: #007031;
 
-$color-brand-alpha-light: #f5f5f5;
-$color-brand-alpha-light-hover: #f6f6f6;
-$color-brand-alpha-light-focus: #ffffff;
+$color-surface-secondary: #FFFFFF;
+$color-surface-secondary-hover: #F5F5F5;
+$color-surface-secondary-focus: #FFFFFF;
 
-$focus-ring-size: 3px;
-$focus-ring-color: rgba(0, 0, 0, 0.12);
+$color-surface-ghost: #FFFFFF;
+$color-surface-ghost-hover: #F5F5F5;
+$color-surface-ghost-focus: rgba(0, 0, 0, 0.05);
+
+$color-surface-destructive: #D92D20;
+$color-surface-destructive-hover: #B42318;
+$color-surface-destructive-focus: #D92D20;
+
+$color-surface-alpha-dark:  #c2c2c2;
+$color-surface-alpha-dark-hover: #aaaaaa;
+$color-surface-alpha-dark-focus: #c2c2c2;
+
+$color-surface-alpha-light: #f5f5f5;
+$color-surface-alpha-light-hover: #f6f6f6;
+$color-surface-alpha-light-focus: #ffffff;
 
 // Text colors
 $color-text-primary: #ffffff;
-$color-text-secondary: #111827;
-$color-text-ghost: #111827;
+$color-text-secondary: #171717;
+$color-text-ghost: #171717;
 $color-text-destructive: #dc2626;
 
 // Icon colors
@@ -110,16 +134,17 @@ $color-icon-destructive: #ffffff;
 $color-icon-alpha-light: #ffffff;
 $color-icon-alpha-dark: #ffffff;
 
-// Borders
+// Badge colors
+$color-badge-primary: rgba(255, 255, 255, 0.2);
+$color-badge-secondary: rgba(0, 0, 0, 0.1);
+$color-badge-ghost: rgba(0, 0, 0, 0.1);
+$color-badge-destructive: rgba(255, 255, 255, 0.2);
+
+// Borders colors
 $color-border-primary: rgba(0, 0, 0, 0.3);
 $color-border-secondary:#D4D4D4;
 $color-border-ghost: transparent;
 $color-border-destructive: rgba(0, 0, 0, 0.3);
 
-// States
-$color-disabled-bg: #e5e7eb;
-$color-disabled-text: #9ca3af;
-
+// Opacity
 $opacity-disabled: 0.4;
-
-$shadow-bottom-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
