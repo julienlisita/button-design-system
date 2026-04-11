@@ -1,0 +1,29 @@
+// src/components/ButtonBase.scss
+
+@use './tokens' as *;
+
+.button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-xs;
+
+  border: none;
+  border-radius: $radius-m;
+  box-shadow: $shadow-bottom-xs;
+  
+  transition: all $transition-fast;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button-base:disabled {
+  cursor: not-allowed;
+  opacity: $opacity-disabled;
+  pointer-events: none;
+}
+
+.button-base:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 $focus-ring-size $focus-ring-color;
+}

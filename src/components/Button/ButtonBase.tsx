@@ -1,15 +1,22 @@
 // src/components/Button/ButtonBase.tsx
 
 import type { ButtonBaseProps } from "./types"
+import './ButtonBase.scss'
 
 function ButtonBase({
   children,
   disabled = false,
   onClick,
-  }: ButtonBaseProps) {
+  className = '',
+}: ButtonBaseProps) {
   return (
-    <button disabled={disabled} onClick={onClick}>
-      {children}
+    <button 
+      type="button"
+      disabled={disabled} 
+      onClick={onClick}
+      className={`button-base ${className}`.trim()}
+    >
+        {children}
     </button>
   )
 }

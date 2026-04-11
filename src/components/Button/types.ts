@@ -18,6 +18,7 @@ export interface ButtonBaseProps {
   disabled?: boolean
   children?: ReactNode
   onClick?: () => void
+  className?: string
 }
 
 export interface TextButtonBaseProps extends ButtonBaseProps {
