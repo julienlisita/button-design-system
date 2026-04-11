@@ -2,12 +2,26 @@
 
 import TextButtonBase from "./TextButtonBase"
 import type { ButtonProps } from "./types"
+import './Button.scss'
 
 function Button({
   variant = 'primary',
+  className = '',
   ...props
 }: ButtonProps) {
-  return <TextButtonBase {...props} />
+  const buttonClassName = [
+    'button',
+    `button--${variant.toLowerCase()}`,
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ')
+  return (
+    <TextButtonBase 
+      {...props} 
+      className={buttonClassName}
+    />
+  )
 }
 
 export default Button

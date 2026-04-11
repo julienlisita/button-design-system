@@ -1,0 +1,68 @@
+// src/components/Button/Button.scss
+
+@use './tokens' as *;
+
+/* PRIMARY */
+
+.button--primary {
+  background: $color-surface-primary;
+  color: $color-text-primary;
+  border: 1px solid $color-border-primary;
+}
+
+.button--primary:hover {
+  background: $color-surface-primary-hover;
+}
+
+.button--primary:focus-visible {
+  background: $color-surface-primary-focus;
+}
+
+/* SECONDARY */
+
+.button--secondary {
+  background: $color-surface-secondary;
+  color: $color-text-secondary;
+  border: 1px solid $color-border-secondary;
+}
+
+.button--secondary:hover {
+  background: $color-surface-secondary-hover;
+}
+
+.button--secondary:focus-visible {
+  background: $color-surface-secondary-focus;
+}
+
+/* GHOST */
+
+.button--ghost {
+  background: $color-surface-ghost;
+  color: $color-text-ghost;
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+.button--ghost:hover {
+  background: $color-surface-ghost-hover;
+}
+
+.button--ghost:focus-visible {
+  background: $color-surface-ghost-focus;
+}
+
+/* DESTRUCTIVE */
+
+.button--destructive {
+  background: $color-surface-destructive;
+  color: $color-text-primary;
+  border: 1px solid $color-border-destructive;
+}
+
+.button--destructive:hover {
+  background: $color-surface-destructive-hover;
+}
+
+.button--destructive:focus-visible {
+  background: $color-surface-destructive-focus;
+}
