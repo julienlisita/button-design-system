@@ -1,0 +1,142 @@
+// src/components/Button/TextButtonBase.scss
+
+@use './tokens' as *;
+
+.text-button {
+  font-family: $font-family-body;
+  font-weight: $font-weight-body;
+}
+
+.text-button--m {
+  padding: $button-padding-y-m $button-padding-x-m;
+  gap: $button-gap-m;
+  font-size: $button-font-size-m;
+  line-height: $button-line-height-m;
+}
+
+.text-button--s {
+  padding: $button-padding-y-s $button-padding-x-s;
+  gap: $button-gap-s;
+  font-size: $button-font-size-s;
+  line-height: $button-line-height-s;
+}
+
+.text-button--xs {
+  padding: $button-padding-y-xs $button-padding-x-xs;
+  gap: $button-gap-xs;
+  font-size: $button-font-size-xs;
+  line-height: $button-line-height-xs;
+}
+
+.text-button__label,
+.text-button__leading-icon,
+.text-button__trailing-icon,
+.text-button__badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-button__leading-icon,
+.text-button__trailing-icon,
+.text-button__badge {
+  justify-content: center;
+}
+
+/* ICON STRUCTURE */
+
+.text-button__leading-icon,
+.text-button__trailing-icon {
+  flex-shrink: 0;
+}
+
+.text-button__leading-icon img,
+.text-button__leading-icon svg,
+.text-button__trailing-icon img,
+.text-button__trailing-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.text-button--m .text-button__leading-icon,
+.text-button--m .text-button__trailing-icon,
+.text-button--s .text-button__leading-icon,
+.text-button--s .text-button__trailing-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.text-button--xs .text-button__leading-icon,
+.text-button--xs .text-button__trailing-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ICON COLORS */
+
+.button--primary .text-button__leading-icon,
+.button--primary .text-button__trailing-icon {
+  color: $color-icon-primary;
+}
+
+.button--secondary .text-button__leading-icon,
+.button--secondary .text-button__trailing-icon {
+  color: $color-icon-secondary;
+}
+
+.button--ghost .text-button__leading-icon,
+.button--ghost .text-button__trailing-icon {
+  color: $color-icon-ghost;
+}
+
+.button--destructive .text-button__leading-icon,
+.button--destructive .text-button__trailing-icon {
+  color: $color-icon-destructive;
+}
+
+/* BADGE STRUCTURE */
+
+.text-button__badge {
+  flex-shrink: 0;
+  padding: $badge-padding-y $badge-padding-x;
+  border-radius: $badge-radius;
+  font-family: $font-family-body;
+  font-size: $font-size-badge;
+  line-height: $line-height-badge;
+  font-weight: $font-weight-badge;
+  box-sizing: border-box;
+}
+
+.text-button--s .text-button__badge,
+.text-button--m .text-button__badge {
+  min-width: $badge-min-size-m;
+  height: $badge-min-size-m;
+}
+
+.text-button--xs .text-button__badge {
+  min-width: $badge-min-size-xs;
+  height: $badge-min-size-xs;
+}
+
+/* BADGE COLORS */
+
+.button--primary .text-button__badge {
+  background: $color-badge-primary;
+  color: $color-text-primary;
+}
+
+.button--secondary .text-button__badge {
+  background: $color-badge-secondary;
+  color: $color-text-secondary;
+}
+
+.button--ghost .text-button__badge {
+  background: $color-badge-ghost;
+  color: $color-text-ghost;
+}
+
+.button--destructive .text-button__badge {
+  background: $color-badge-destructive;
+  color: $color-text-primary;
+}
+

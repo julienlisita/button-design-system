@@ -1,22 +1,50 @@
-// src/components/Button/TextButtonBase.tsx
-
-import ButtonBase from "./ButtonBase"
-import type { TextButtonBaseProps } from "./types"
+import ButtonBase from './ButtonBase'
+import type { TextButtonBaseProps } from './types'
+import './TextButtonBase.scss'
 
 function TextButtonBase({
   children,
+  disabled = false,
+  onClick,
+  className = '',
+  size = 'M',
   leadingIcon,
   trailingIcon,
   badge,
-  disabled,
-  onClick,
 }: TextButtonBaseProps) {
+  const textButtonClassName = [
+    'text-button',
+    `text-button--${size.toLowerCase()}`,
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ')
+
   return (
-    <ButtonBase disabled={disabled} onClick={onClick}>
-      {leadingIcon && <span>{leadingIcon}</span>}
-      <span>{children}</span>
-      {trailingIcon && <span>{trailingIcon}</span>}
-      {badge !== undefined && <span>{badge}</span>}
+    <ButtonBase
+      disabled={disabled}
+      onClick={onClick}
+      className={textButtonClassName}
+    >
+      {leadingIcon && (
+        <span className="text-button__leading-icon" aria-hidden="true">
+          {leadingIcon}
+        </span>
+      )}
+
+      <span className="text-button__label">{children}</span>
+
+      {trailingIcon && (
+        <span className="text-button__trailing-icon" aria-hidden="true">
+          {trailingIcon}
+        </span>
+      )}
+
+      {badge !== undefined && (
+        <span className="text-button__badge" aria-hidden="true">
+          {badge}
+        </span>
+      )}
     </ButtonBase>
   )
 }
