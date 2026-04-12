@@ -8,6 +8,7 @@ function ButtonBase({
   disabled = false,
   onClick,
   className = '',
+  ariaLabel,
 }: ButtonBaseProps) {
   return (
     <button 
@@ -15,6 +16,7 @@ function ButtonBase({
       disabled={disabled} 
       onClick={onClick}
       className={`button-base ${className}`.trim()}
+      aria-label={ariaLabel}
     >
         {children}
     </button>

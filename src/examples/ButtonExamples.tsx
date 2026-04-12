@@ -130,6 +130,7 @@ function ButtonExamples() {
                             leadingIcon={<MagnifyingGlassIcon />}
                             trailingIcon={<SlidersHorizontalIcon />}
                             addonIcon={<TrashIcon />}
+                            addonAriaLabel="Delete item"
                             badge={3}
                           >
                             Button
@@ -174,6 +175,7 @@ function ButtonExamples() {
                           variant={variant.value}
                           disabled={state === 'disabled'}
                           icon={<PlaceholderIcon />}
+                          ariaLabel="Open options"
                         />
                       </div>
                     ))}

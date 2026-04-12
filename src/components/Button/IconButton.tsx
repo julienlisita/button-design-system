@@ -10,6 +10,7 @@ function IconButton({
   disabled = false,
   onClick,
   className = '',
+  ariaLabel,
 }: IconButtonProps) {
   const iconButtonClassName = [
     'icon-button',
@@ -23,6 +24,7 @@ function IconButton({
       disabled={disabled} 
       onClick={onClick} 
       className={iconButtonClassName}
+      ariaLabel={ariaLabel}
     >
       <span className="icon-button__icon" aria-hidden="true">
         {icon}

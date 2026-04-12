@@ -19,6 +19,7 @@ export interface ButtonBaseProps {
   children?: ReactNode
   onClick?: () => void
   className?: string
+  ariaLabel?: string
 }
 
 export interface TextButtonBaseProps extends ButtonBaseProps {
@@ -36,6 +37,7 @@ export interface GroupButtonProps extends TextButtonBaseProps {
   variant?: GroupVariant
   addonIcon: ReactNode
   onAddonClick?: () => void
+  addonAriaLabel: string
 }
 
 export interface IconButtonProps extends ButtonBaseProps {

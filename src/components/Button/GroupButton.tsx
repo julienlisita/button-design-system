@@ -10,6 +10,7 @@ function GroupButton({
   onAddonClick,
   className = '',
   disabled = false,
+  addonAriaLabel,
   ...props
 }: GroupButtonProps) {
   const groupButtonClassName = [
@@ -34,6 +35,7 @@ function GroupButton({
         className="group-button__addon"
         onClick={onAddonClick}
         disabled={disabled}
+        aria-label={addonAriaLabel}
       >
         <span className="group-button__addon-icon" aria-hidden="true">
           {addonIcon}

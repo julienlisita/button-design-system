@@ -11,6 +11,7 @@ function TextButtonBase({
   leadingIcon,
   trailingIcon,
   badge,
+  ariaLabel,
 }: TextButtonBaseProps) {
   const textButtonClassName = [
     'text-button',
@@ -25,6 +26,7 @@ function TextButtonBase({
       disabled={disabled}
       onClick={onClick}
       className={textButtonClassName}
+      ariaLabel={ariaLabel}
     >
       {leadingIcon && (
         <span className="text-button__leading-icon" aria-hidden="true">
