@@ -1,0 +1,121 @@
+// src/components/Button/GroupButton.scss
+
+@use './tokens' as *;
+
+/* GLOBAL STRUCTURE */
+
+.group-button {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: $radius-m;
+  overflow: hidden;
+  box-shadow: $shadow-bottom-xs;
+}
+
+.group-button:focus-within {
+  box-shadow:
+    $shadow-bottom-xs,
+    0 0 0 $focus-ring-size $focus-ring-color;
+}
+
+/* MAIN BUTTON */
+
+.group-button__main {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  box-shadow: none;
+}
+
+/* ADDON STRUCTURE */
+
+.group-button__addon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-m;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 $space-s;
+  cursor: pointer;
+}
+
+/* ADDON ICON */
+
+.group-button__addon-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-button .text-button--m + .group-button__addon .group-button__addon-icon,
+.group-button .text-button--s + .group-button__addon .group-button__addon-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.group-button .text-button--xs + .group-button__addon .group-button__addon-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* PRIMARY */
+
+.group-button--primary .group-button__addon {
+  background: $color-surface-primary;
+  color: $color-text-primary;
+  border: 1px solid $color-border-primary;
+}
+
+.group-button--primary .group-button__addon:hover {
+  background: $color-surface-primary-hover;
+}
+
+.group-button--primary .group-button__addon-icon {
+  color: $color-icon-primary;
+}
+
+/* SECONDARY */
+
+.group-button--secondary .group-button__addon {
+  background: $color-surface-secondary;
+  color: $color-text-secondary;
+  border: 1px solid $color-border-secondary;
+}
+
+.group-button--secondary .group-button__addon:hover {
+  background: $color-surface-secondary-hover;
+}
+
+.group-button--secondary .group-button__addon-icon {
+  color: $color-icon-secondary;
+}
+
+/* DESTRUCTIVE */
+
+.group-button--destructive .group-button__addon {
+  background: $color-surface-destructive;
+  color: $color-text-primary;
+  border: 1px solid $color-border-destructive;
+}
+
+.group-button--destructive .group-button__addon:hover {
+  background: $color-surface-destructive-hover;
+}
+
+.group-button--destructive .group-button__addon-icon {
+  color: $color-icon-destructive;
+}
+
+/* DISABLED STATE */
+
+.group-button--disabled .button-base:disabled,
+.group-button__addon:disabled {
+  opacity: 1;
+}
+
+.group-button--disabled {
+  opacity: $opacity-disabled;
+  cursor: not-allowed;
+  pointer-events: none;
+}
