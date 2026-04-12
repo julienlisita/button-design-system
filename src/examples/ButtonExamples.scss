@@ -3,6 +3,7 @@
 .button-examples {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 .button-examples__header {
@@ -13,20 +14,77 @@
   font-size: 32px;
 }
 
-.button-examples__block {
-  width: 100%;
-  max-width: 600px;
-  min-height: 600px;
-  margin: 0 auto;
+.button-examples__families {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
 }
 
-.button-examples__row {
+.button-examples__family {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.button-examples__family-title {
+  font-size: 28px;
+}
+
+.button-examples__size-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.button-examples__size-title {
+  font-size: 22px;
+}
+
+.button-examples__variants {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.button-examples__variant-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  align-items: flex-start;
+  flex: 1 1 180px;
+  min-width: 180px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.button-examples__variant-title {
+  font-size: 18px;
+}
+
+.button-examples__states {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.button-examples__state {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.button-examples__state-label {
+  font-size: 14px;
+  color: #666;
+  text-transform: capitalize;
 }
