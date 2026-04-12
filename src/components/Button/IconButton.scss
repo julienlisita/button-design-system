@@ -1,0 +1,91 @@
+// src/components/Button/IconButton.scss
+
+@use './tokens' as *;
+
+.icon-button {
+  padding: $icon-button-padding;
+  aspect-ratio: 1;
+}
+
+.icon-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* PRIMARY */
+
+.icon-button--primary {
+  background: $color-surface-primary;
+  border: 1px solid $color-border-primary;
+}
+
+.icon-button--primary:hover {
+  background: $color-surface-primary-hover;
+}
+
+.icon-button--primary:focus-visible {
+  background: $color-surface-primary-focus;
+}
+
+.icon-button--primary .icon-button__icon {
+  color: $color-icon-primary;
+}
+
+/* SECONDARY */
+
+.icon-button--secondary {
+  background: $color-surface-secondary;
+  border: 1px solid $color-border-secondary;
+}
+
+.icon-button--secondary:hover {
+  background: $color-surface-secondary-hover;
+}
+
+.icon-button--secondary:focus-visible {
+  background: $color-surface-secondary-focus;
+}
+
+.icon-button--secondary .icon-button__icon {
+  color: $color-icon-secondary;
+}
+
+/* ALPHA LIGHT */
+
+.icon-button--alphalight {
+  background: $color-surface-alpha-light;
+}
+
+.icon-button--alphalight:hover {
+  background: $color-surface-alpha-light-hover;
+}
+
+.icon-button--alphalight:focus-visible {
+  background: $color-surface-alpha-light-focus;
+}
+
+.icon-button--alphalight .icon-button__icon {
+  color: $color-icon-alpha-light;
+}
+
+/* ALPHA DARK */
+
+.icon-button--alphadark {
+  background: $color-surface-alpha-dark;
+}
+
+.icon-button--alphadark:hover {
+  background: $color-surface-alpha-dark-hover;
+}
+
+.icon-button--alphadark:focus-visible {
+  background: $color-surface-alpha-dark-focus;
+}
+
+.icon-button--alphadark .icon-button__icon {
+  color: $color-icon-alpha-dark;
+}
